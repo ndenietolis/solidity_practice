@@ -8,6 +8,7 @@ I'll be using this to get aquainted with linking remix to github and generally g
   Successfull in attaching to port 8545 and linking 2 dummy accounts to move ETH between
 
 
+The bracked info below is from sgerogia's hello world ethereum tutorial
 [Hello Ethereum
 --------------
 
