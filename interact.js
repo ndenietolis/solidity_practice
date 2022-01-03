@@ -29,7 +29,7 @@ var compilerOutput = JSON.parse(compiled);
 var abi = compilerOutput.contracts.contract.Hello.abi;
 
 // create Hello contract instance
-var helloInstance = new web3.eth.Contract(abi, '0xREPLACE_ME_WITH_CONTRACT_ADDRESS');
+var helloInstance = new web3.eth.Contract(abi, '0x6eCf10FbBa2344Bc7195092e29B0b7718ed321db');
 // call the getter
 helloInstance.methods.getMessage().call().then( function(result) {
     console.log("Current contract message: " + result);
@@ -39,7 +39,7 @@ var newMessage = "Hello " + Math.floor(Math.random() * 1000);
 helloInstance.methods.setMessage(newMessage).estimateGas( function(error, gasAmount){
     console.log('Estimated gas for call:' + gasAmount);
 });
-helloInstance.methods.setMessage(newMessage).send({from: '0xREPLACE_ME_WITH_ACCOUNT'})
+helloInstance.methods.setMessage(newMessage).send({from: '0xEC35B21f97e61d7b72F2C1911faFc54CF1F81322'})
 .on('error', function(error) {
     console.log("Error: " + error);
 })

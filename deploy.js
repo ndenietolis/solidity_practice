@@ -36,7 +36,7 @@ helloWorldDeployTx.estimateGas(function(err, gas){
 });
 // deploy from the given account, using up to the given gas amount
 // print transaction hash and new contract instance address
-helloWorldDeployTx.send({from: '0xREPLACE_ME_WITH_ACCOUNT', gas: 1000000})
+helloWorldDeployTx.send({from: '0xEC35B21f97e61d7b72F2C1911faFc54CF1F81322', gas: 1000000})
 .on('error', function(error){
     console.log("Error: " + error);
 })
